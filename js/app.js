@@ -200,9 +200,24 @@
     const rawHash = window.location.hash;
     let docId = normalizeHash(rawHash);
 
-    if (!docId) {
-      docId = 'introduction/index';
+    const homepageView = document.getElementById('homepageView');
+    const docsView = document.getElementById('docsView');
+    const secNav = document.getElementById('secondaryNavRow');
+
+    if (!docId || docId === 'home' || docId === 'index') {
+      document.body.classList.add('on-homepage');
+      if (homepageView) homepageView.style.display = 'block';
+      if (docsView) docsView.style.display = 'none';
+      if (secNav) secNav.style.display = 'none';
+      document.title = 'Amazon EKS Workshop';
+      window.scrollTo({ top: 0, behavior: 'instant' });
+      return;
     }
+
+    document.body.classList.remove('on-homepage');
+    if (homepageView) homepageView.style.display = 'none';
+    if (docsView) docsView.style.display = 'flex';
+    if (secNav) secNav.style.display = 'flex';
 
     navigateToDoc(docId, false);
   }

@@ -999,3 +999,205 @@ img[loading="lazy"] {
   height: 18px;
   border-width: 2px;
 }
+
+/* ==========================================================================
+   EKS Workshop Homepage Portal Styles (1:1 Official Docusaurus Replica)
+   ========================================================================== */
+.homepage-portal {
+  display: block;
+  width: 100%;
+  background-color: #070d18 !important;
+  color: #ffffff !important;
+  min-height: calc(100vh - 60px);
+  padding-bottom: 3rem;
+}
+
+.homepage-portal * {
+  box-sizing: border-box;
+}
+
+.homepage-portal .heroBanner {
+  padding: 4.5rem 1.5rem 2rem 1.5rem;
+  text-align: center;
+  position: relative;
+  background: transparent !important;
+}
+
+.homepage-portal .hero__title {
+  font-size: 3.2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  letter-spacing: -0.5px;
+  color: #ffffff !important;
+}
+
+.homepage-portal .hero__subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2.2rem;
+  line-height: 1.6;
+  color: #cbd5e1 !important;
+  opacity: 0.95;
+}
+
+.homepage-portal .hero-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.homepage-portal .btn-hero-primary {
+  display: inline-block;
+  background: #ffffff !important;
+  color: #0f172a !important;
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: 10px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+  transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+  border: none;
+}
+
+.homepage-portal .btn-hero-primary:hover {
+  transform: translateY(-2px);
+  background: #f1f5f9 !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* 2 Path Selection Cards (Side-by-Side) */
+.homepage-portal .pathSelection {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 1.5rem;
+  flex-wrap: wrap;
+}
+
+.homepage-portal .pathCard {
+  background: rgba(255, 255, 255, 0.035) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 12px;
+  padding: 2.2rem 1.8rem;
+  flex: 1;
+  min-width: 320px;
+  max-width: 440px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.homepage-portal .pathCard:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.35) !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.homepage-portal .pathCard h3 {
+  font-size: 1.45rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  color: #ffffff !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.homepage-portal .pathCard p {
+  font-size: 0.95rem;
+  color: #94a3b8 !important;
+  margin-bottom: 1.8rem;
+  line-height: 1.5;
+  min-height: 48px;
+}
+
+.homepage-portal .newBadge {
+  display: inline-block;
+  background: #ff9900;
+  color: #ffffff;
+  font-size: 0.68rem;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 4px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.homepage-portal .btn-card-green {
+  display: inline-block;
+  background: #258548 !important;
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 0.98rem;
+  padding: 9px 26px;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.15s ease;
+  border: none;
+}
+.homepage-portal .btn-card-green:hover {
+  background: #1f723d !important;
+  transform: translateY(-2px);
+}
+
+.homepage-portal .btn-card-white {
+  display: inline-block;
+  background: #ffffff !important;
+  color: #111827 !important;
+  font-weight: 700;
+  font-size: 0.98rem;
+  padding: 9px 26px;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.15s ease;
+  border: none;
+}
+.homepage-portal .btn-card-white:hover {
+  background: #f3f4f6 !important;
+  transform: translateY(-2px);
+}
+
+.homepage-portal .moduleLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem 0.85rem;
+  margin-top: 1.8rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+  width: 100%;
+}
+
+.homepage-portal .moduleLink {
+  color: #cbd5e1 !important;
+  text-decoration: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+.homepage-portal .moduleLink:hover {
+  color: #ff9900 !important;
+  text-decoration: underline;
+}
+
+/* Home Navbar adjustments */
+body.on-homepage .navbar-modules-nav {
+  display: none !important;
+}
+body.on-homepage .navbar-row-sub {
+  display: none !important;
+}
+body.on-homepage .custom-top-header {
+  background: #070d18 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
